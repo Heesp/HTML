@@ -1,0 +1,206 @@
+
+/* ===================== General CSS ============== */
+
+html{
+  font-family: "avenir";
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+.menu{
+  border: 1px solid grey;
+
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.menu h1{
+  text-align: center;
+  /*border: 1px solid black;*/
+  flex: 0 0 50%;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding: 1rem 7vw;
+}
+
+li{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+}
+
+li a{
+  text-decoration: none;
+  color:white;
+  background-color: black;
+  text-align: center;
+  padding: 1em .5em;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  transition: all .5s ease;
+}
+
+li a i{
+  font-size: 2rem;
+  transition: all .5s ease;
+}
+
+li a span{
+  transition: all .5s ease;
+}
+
+.vertical{
+  display: block;
+}
+
+.vertical ul{
+  background-color: black;
+
+  display:block;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical ul li{
+  padding-left: 0;
+}
+
+.block-input{
+  padding: 5rem;
+  padding-top: 2rem;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+input{
+  width: 40%;
+  transition: all .5s ease;
+}
+
+/*==============      END OF GENERAL STYLE     ============*/
+
+/* ============       TRANSITIONS      =================*/
+
+.menu01 a:hover{
+  background-color: grey;
+}
+
+.menu02 a:hover{
+  color:purple;
+}
+
+.menu03 a:hover i{
+  color:purple;
+}
+
+.menu04 a:hover{
+  box-shadow: 2px 2px 5px black;
+}
+
+.menu05 a{
+  border-bottom: 5px solid transparent;
+}
+
+.menu05 a:hover{
+  border-bottom: 5px solid pink;
+}
+
+.menu06 a{
+  border-bottom: 5px solid transparent;
+}
+
+.menu06 li:nth-of-type(1) a:hover{
+  border-bottom: 5px solid pink;
+}
+
+.menu06 li:nth-of-type(2) a:hover{
+  border-bottom: 5px solid red;
+}
+
+.menu06 li:nth-of-type(3) a:hover{
+  border-bottom: 5px solid green;
+}
+
+.menu06 li:nth-of-type(4) a:hover{
+  border-bottom: 5px solid purple;
+}
+
+.menu07 li{
+  display: flex;
+}
+
+.menu07 a{
+  flex-grow: 1;
+  text-align: left;
+}
+
+.menu07 a:hover{
+  background-color: pink;
+  color:black;
+}
+
+.menu08 li{
+  display: flex;
+}
+
+.menu08 li a{
+  flex-grow: 1;
+  text-align: left;
+
+  transition: background-color .5s, color .25s .25s;
+}
+
+
+.menu08 li a:hover{
+  background-color: yellow;
+  color:black;
+}
+
+.menu09 li{
+  display: flex;
+}
+
+.menu09 li a{
+  flex: 0 0 15%;
+  transition: all 1s ease;
+
+  background-color: orange;
+}
+
+.menu09 li a:hover{
+  text-align: right;
+  flex: 1 0 15%;
+}
+
+.menu10 a:hover i{
+  transform:rotate(360deg);
+}
+
+.menu11 a:hover i{
+  transform:rotateY(180deg);
+}
+
+.menu12 a:hover i{
+  transform:rotateX(180deg);
+}
+
+input:focus{
+  width:90%;
+}
