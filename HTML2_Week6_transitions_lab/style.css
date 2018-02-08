@@ -82,6 +82,17 @@ li a span{
   padding-left: 0;
 }
 
+.block-input{
+  padding: 5rem;
+  padding-top: 2rem;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+input{
+  width: 40%;
+  transition: all .5s ease;
+}
 
 /*==============      END OF GENERAL STYLE     ============*/
 
@@ -149,14 +160,47 @@ li a span{
   display: flex;
 }
 
-.menu08 a{
+.menu08 li a{
   flex-grow: 1;
   text-align: left;
 
-  transition: background-color .5s ease, color .5s ease .25s;
+  transition: background-color .5s, color .25s .25s;
 }
 
-.menu08 a:hover{
+
+.menu08 li a:hover{
   background-color: yellow;
   color:black;
+}
+
+.menu09 li{
+  display: flex;
+}
+
+.menu09 li a{
+  flex: 0 0 15%;
+  transition: all 1s ease;
+
+  background-color: orange;
+}
+
+.menu09 li a:hover{
+  text-align: right;
+  flex: 1 0 15%;
+}
+
+.menu10 a:hover i{
+  transform:rotate(360deg);
+}
+
+.menu11 a:hover i{
+  transform:rotateY(180deg);
+}
+
+.menu12 a:hover i{
+  transform:rotateX(180deg);
+}
+
+input:focus{
+  width:90%;
 }
