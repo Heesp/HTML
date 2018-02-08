@@ -1,0 +1,38 @@
+body{
+  background-color: hsla(240, 40%, 20%, 1);
+}
+
+.wrapper{
+  margin: 2rem;
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+  grid-template-row: repeat(4,1fr);
+  grid-gap: 1em;
+
+}
+
+.block{
+  border: 1px solid grey;
+  min-height: 300px;
+  padding-left: 1em;
+
+  background-color: hsl(240, 90%, 70%);
+
+  transition: all .5s ease;
+}
+
+.block:hover{
+  background-color: hsl(0, 50%, 70%);
+}
+
+.center{
+  grid-area: 2/2/4/4;
+}
+
+.block06, .block08, .block10{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
