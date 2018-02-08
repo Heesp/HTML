@@ -1,0 +1,162 @@
+
+/* ===================== General CSS ============== */
+
+html{
+  font-family: "avenir";
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+.menu{
+  border: 1px solid grey;
+
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.menu h1{
+  text-align: center;
+  /*border: 1px solid black;*/
+  flex: 0 0 50%;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding: 1rem 7vw;
+}
+
+li{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+}
+
+li a{
+  text-decoration: none;
+  color:white;
+  background-color: black;
+  text-align: center;
+  padding: 1em .5em;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  transition: all .5s ease;
+}
+
+li a i{
+  font-size: 2rem;
+  transition: all .5s ease;
+}
+
+li a span{
+  transition: all .5s ease;
+}
+
+.vertical{
+  display: block;
+}
+
+.vertical ul{
+  background-color: black;
+
+  display:block;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical ul li{
+  padding-left: 0;
+}
+
+
+/*==============      END OF GENERAL STYLE     ============*/
+
+/* ============       TRANSITIONS      =================*/
+
+.menu01 a:hover{
+  background-color: grey;
+}
+
+.menu02 a:hover{
+  color:purple;
+}
+
+.menu03 a:hover i{
+  color:purple;
+}
+
+.menu04 a:hover{
+  box-shadow: 2px 2px 5px black;
+}
+
+.menu05 a{
+  border-bottom: 5px solid transparent;
+}
+
+.menu05 a:hover{
+  border-bottom: 5px solid pink;
+}
+
+.menu06 a{
+  border-bottom: 5px solid transparent;
+}
+
+.menu06 li:nth-of-type(1) a:hover{
+  border-bottom: 5px solid pink;
+}
+
+.menu06 li:nth-of-type(2) a:hover{
+  border-bottom: 5px solid red;
+}
+
+.menu06 li:nth-of-type(3) a:hover{
+  border-bottom: 5px solid green;
+}
+
+.menu06 li:nth-of-type(4) a:hover{
+  border-bottom: 5px solid purple;
+}
+
+.menu07 li{
+  display: flex;
+}
+
+.menu07 a{
+  flex-grow: 1;
+  text-align: left;
+}
+
+.menu07 a:hover{
+  background-color: pink;
+  color:black;
+}
+
+.menu08 li{
+  display: flex;
+}
+
+.menu08 a{
+  flex-grow: 1;
+  text-align: left;
+
+  transition: background-color .5s ease, color .5s ease .25s;
+}
+
+.menu08 a:hover{
+  background-color: yellow;
+  color:black;
+}
